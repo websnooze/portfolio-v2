@@ -1,17 +1,17 @@
 export const headerLinks = [
   {
     id: 1,
-    name: "Home",
+    name: "navbar.home",
     link: "/",
   },
   {
     id: 2,
-    name: "Works",
+    name: "navbar.works",
     link: "/works",
   },
   {
     id: 3,
-    name: "Contact",
+    name: "navbar.contact",
     link: "/contact",
   },
 ];

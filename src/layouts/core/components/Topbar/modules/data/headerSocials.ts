@@ -15,7 +15,7 @@ export const headerSocials = [
   },
   {
     id: 3,
-    link: "https://discord.com/",
+    link: "https://discordapp.com/users/180449157159321601",
     name: "Discord",
     icon: FaDiscord,
   },

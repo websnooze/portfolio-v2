@@ -39,27 +39,29 @@ body {
   --bg-white: #ffffff;
   --bg-card: #f6f6f7;
   --bg-card-hover: #eff0f3;
-  --bg-blue: #646cff;
-  --bg-blue-hover: #747bff;
+  --bg-blue: #00dc82;
+  --bg-blue-hover: #00a15f;
   --bg-grey: #e7e8ec;
   --bg-divider: #e2e2e3;
   --bg-button: #ebebef;
   --bg-button-hover: #e4e4e9;
   --text-dark: #3c3c43;
+  --always-dark: #3c3c43;
   --text-white: #ffffff;
   --font-rob: "Roboto", sans-serif;
   --font-int: "Inter", sans-serif;
   --nav-glass: rgb(255 255 255 / 70%);
-  --text-gradient: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-  --image-gradient: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --text-gradient: -webkit-linear-gradient(120deg, #add7c6 30%, #00dc82);
+  --image-gradient: linear-gradient(-45deg, #add7c6 50%, #00dc82 50%);
+  --drop-shadow: 0 12px 32px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="dark"] {
   --bg-white: #1b1b1f;
   --bg-card: #202127;
   --bg-card-hover: #eff0f3;
-  --bg-blue: #646cff;
-  --bg-blue-hover: #747bff;
+  --bg-blue: #00dc82;
+  --bg-blue-hover: #00a15f;
   --bg-grey: #2b2f36;
   --bg-divider: #2e2e32;
   --bg-button: #32363f;

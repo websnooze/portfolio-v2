@@ -1,18 +1,22 @@
+import { useTranslation } from "react-i18next";
+
 import { homeHeroData } from "./data/homeHeroData";
 
 import "./css/module.home-hero.css";
 
 const HomeHero = () => {
+  const { t } = useTranslation();
   const data = homeHeroData;
   return (
     <section className="hero container">
       <div className="hero-text">
         <div className="hero-text-title">
           <h1 className="hero-text-gradient">{data.title}</h1>
-          <h1>{data.subtitle1}</h1>
-          <h1>{data.subtitle2}</h1>
+          <h1>{t(data.subtitle1)}</h1>
+          <h1>{t(data.subtitle2)}</h1>
         </div>
-        <p>{data.text}</p>
+        <p>{t(data.text)}</p>
+        {/* 
         <div className="hero-buttons">
           {data.buttons.map((item) => (
             <a
@@ -25,9 +29,11 @@ const HomeHero = () => {
             </a>
           ))}
         </div>
+        */}
       </div>
+
       <div className="hero-img">
-        <img src="/logo-with-shadow.png" alt="Logo" />
+        <img src="/hero.png" alt="Logo" />
         <div className="hero-img-gradient" />
       </div>
     </section>

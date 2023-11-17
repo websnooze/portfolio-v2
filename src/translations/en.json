@@ -1,0 +1,45 @@
+{
+  "navbar": {
+    "home": "Home",
+    "works": "Works",
+    "contact": "Contact"
+  },
+  "homePage": {
+    "hero": {
+      "subtTitle1": "Frontend developer",
+      "subtTitle2": "UX - UI Designer",
+      "text": "Here to listen, to help you bring your projects to fruition. No matter how complex!"
+    },
+    "skills": {
+      "techTitle": "Libraries",
+      "techText": "HTML, CSS, Javascript, React... Able to adapt the technology to your needs",
+      "fastTitle": "Adaptability",
+      "fastText": "Can work on an existing project or one that has to be created from scratch",
+      "richTitle": "Works",
+      "richText": "Having worked on a wide range of projects, I'm in a position to meet your expectations.",
+      "optiTitle": "Technology watch",
+      "optiText": "Always following the latest in design and technology, give your projects a new lease of life",
+      "plugTitle": "Design & production",
+      "plugText": "We'll be in touch throughout the process. You'll be in control of what the final product will look like!",
+      "apiTitle": "Delivery",
+      "apiText": "Once your project is complete, you'll have a turnkey solution!"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Contact",
+      "subtTitle1": "A question?",
+      "subtTitle2": "A project?",
+      "text": "Contact me and I'll get back to you as soon as possible !"
+    },
+    "buttons": {
+      "form": "📋 Form",
+      "mail": "📧 Email",
+      "discord": "🪑 Discord",
+      "github": "🐨 Github"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

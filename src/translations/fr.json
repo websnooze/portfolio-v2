@@ -1,0 +1,45 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "works": "Travaux",
+    "contact": "Contact"
+  },
+  "homePage": {
+    "hero": {
+      "subtTitle1": "Frontend développeur",
+      "subtTitle2": "Designer UX - UI",
+      "text": "À votre écoute, pour mener à bien vos projets. Aussi complexes soient-ils !"
+    },
+    "skills": {
+      "techTitle": "Librairies",
+      "techText": "HTML, CSS, Javascript, React... Capable d'adapter la technologie en fonction de vos besoins",
+      "fastTitle": "Adapatbilité",
+      "fastText": "Peut aussi bien intervenir sur un projet déjà existant qu'un projet qui doit être créé de zéro",
+      "richTitle": "Travaux",
+      "richText": "Ayant travaillé sur des projets très différents, je suis en mesure de repondre à vos attentes",
+      "optiTitle": "Veille technologique",
+      "optiText": "Suivant toujours ce qui se fait de mieux en terme de design et de technologie, donnez un coup de jeune à vos projets",
+      "plugTitle": "Conception & réalisation",
+      "plugText": "Nous serons en contact tout au long du processus. Vous garderez la main sur ce que sera le produit final !",
+      "apiTitle": "Livraison",
+      "apiText": "Une fois votre projet réalisé, vous aurez une solution clé en main !"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Contact",
+      "subtTitle1": "Une question ?",
+      "subtTitle2": "Un project ?",
+      "text": "Prenez contact avec moi, je vous répondrez dans les plus brefs délais !"
+    },
+    "buttons": {
+      "form": "📋 Formulaire",
+      "mail": "📧 Courriel",
+      "discord": "🪑 Discord",
+      "github": "🐨 Github"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés"
+  }
+}

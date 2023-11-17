@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { HeaderDivider } from "../Topbar/modules";
 import "./css/module.footer.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   return (
     <footer>
@@ -13,7 +15,7 @@ const Footer = () => {
           Websnooze.xyz
         </Link>
         <HeaderDivider />
-        <span>All rights reserved</span>
+        <span>{t("footer.rights")}</span>
       </div>
     </footer>
   );

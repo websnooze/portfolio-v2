@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  align-items: center;
   padding: 120px 0 80px 0;
   gap: 40px;
 }
@@ -11,6 +12,7 @@
 .hero-text-title {
   display: flex;
   flex-direction: column;
+  width: 550px;
 }
 .hero-text-title h1 {
   line-height: 64px;
@@ -81,8 +83,15 @@
   transform: translate(-50%, -50%);
 }
 .hero-img img {
-  width: 320px;
-  height: 320px;
+  width: 450px;
+  height: 450px;
   position: relative;
+  object-fit: contain;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
 }

@@ -10,10 +10,16 @@ const ThemeSwitcher = () => {
 
   const setDarkMode = () => {
     document.querySelector("body")?.setAttribute("data-theme", "dark");
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", "#1b1b1f");
     localStorage.setItem("selectedTheme", "dark");
   };
   const setLightMode = () => {
     document.querySelector("body")?.setAttribute("data-theme", "light");
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", "#ffffff");
     localStorage.setItem("selectedTheme", "light");
   };
 

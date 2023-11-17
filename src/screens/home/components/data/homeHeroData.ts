@@ -1,8 +1,8 @@
 export const homeHeroData = {
-  title: "Vite",
-  subtitle1: "Next Generation",
-  subtitle2: "Frontend Tooling",
-  text: "Get ready for a development environment that can finally catch up with you.",
+  title: "Websnooze",
+  subtitle1: "homePage.hero.subtTitle1",
+  subtitle2: "homePage.hero.subtTitle2",
+  text: "homePage.hero.text",
   buttons: [
     {
       id: 1,
