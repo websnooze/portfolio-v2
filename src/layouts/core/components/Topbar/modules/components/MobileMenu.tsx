@@ -37,7 +37,21 @@ const MobileMenu = () => {
     <div className="mobile-menu">
       <AnimatePresence mode="wait">
         <div className="mobile-menu-icon" onClick={toggleDropdown}>
-          Menu
+          <motion.span
+            className={`mobile-tick-top ${
+              isOpen ? "mobile-tick-top-open" : "mobile-tick-top-closed"
+            }`}
+          />
+          <motion.span
+            className={`mobile-tick-center ${
+              isOpen ? "mobile-tick-center-open" : "mobile-tick-center-closed"
+            }`}
+          />
+          <motion.span
+            className={`mobile-tick-bottom ${
+              isOpen ? "mobile-tick-bottom-open" : "mobile-tick-bottom-closed"
+            }`}
+          />
         </div>
       </AnimatePresence>
       <AnimatePresence mode="wait">
