@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  padding: 25px 0;
+  border-top: 1px solid var(--bg-grey);
+  margin-top: 50px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font-family: var(--font-int);
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer-link {
+  font-family: var(--font-int);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: all ease 0.3s;
+}
+.footer-link:hover {
+  color: var(--bg-blue);
+}

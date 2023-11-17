@@ -1,0 +1,34 @@
+.home-lastworks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.home-lastworks-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  font-family: var(--font-int);
+}
+.home-lastworks-item h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.home-lastworks-item__icon {
+  background: var(--bg-grey);
+  display: flex;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
+.home-lastworks-item p {
+  opacity: 0.78;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+}
