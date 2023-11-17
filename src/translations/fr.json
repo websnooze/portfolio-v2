@@ -2,7 +2,11 @@
   "navbar": {
     "home": "Accueil",
     "works": "Travaux",
-    "contact": "Contact"
+    "contact": "Contact",
+    "mobile": {
+      "lang": "Langue",
+      "theme": "Apparence"
+    }
   },
   "homePage": {
     "hero": {

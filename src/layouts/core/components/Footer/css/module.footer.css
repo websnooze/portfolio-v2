@@ -23,3 +23,12 @@ footer {
 .footer-link:hover {
   color: var(--bg-blue);
 }
+
+@media (max-width: 639px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+}

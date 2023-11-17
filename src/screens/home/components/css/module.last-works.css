@@ -32,3 +32,10 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+@media (max-width: 639px) {
+  .home-lastworks {
+    display: flex;
+    flex-direction: column;
+  }
+}

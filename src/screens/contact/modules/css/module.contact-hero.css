@@ -92,8 +92,40 @@
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   .contact {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contact-img {
+    transform: translate(0);
+  }
+  .contact-img-gradient {
+    width: 150px;
+    height: 150px;
+  }
+  .contact-img img {
+    width: 250px;
+    height: 250px;
+  }
+  .contact-text-title {
+    width: 100%;
+    align-items: center;
+  }
+  .contact-text-title h1 {
+    line-height: 35px;
+    font-size: 30px;
+  }
+  .contact-text p {
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .contact-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 }

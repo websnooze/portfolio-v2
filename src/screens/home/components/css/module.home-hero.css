@@ -90,8 +90,35 @@
   z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 639px) {
   .hero {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .hero-img {
+    transform: translate(0);
+  }
+  .hero-img-gradient {
+    width: 150px;
+    height: 150px;
+  }
+  .hero-img img {
+    width: 250px;
+    height: 250px;
+  }
+  .hero-text-title {
+    width: 100%;
+    align-items: center;
+  }
+  .hero-text-title h1 {
+    line-height: 35px;
+    font-size: 30px;
+  }
+  .hero-text p {
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 100%;
   }
 }
