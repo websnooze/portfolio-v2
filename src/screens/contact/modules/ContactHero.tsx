@@ -47,7 +47,7 @@ const ContactHero = () => {
         </div>
       </div>
       <div className="contact-img">
-        <img src="/hero-contact.png" alt="Logo" />
+        <img src="/hero-contact.webp" alt="Logo" />
         <div className="contact-img-gradient" />
       </div>
     </section>

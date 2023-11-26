@@ -1,0 +1,13 @@
+.workid-side {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 12px;
+}
+.workid-side-techs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.workid-side-techs img {
+  height: 30px;
+}

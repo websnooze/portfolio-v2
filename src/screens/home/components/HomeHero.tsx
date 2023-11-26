@@ -16,24 +16,9 @@ const HomeHero = () => {
           <h1>{t(data.subtitle2)}</h1>
         </div>
         <p>{t(data.text)}</p>
-        {/* 
-        <div className="hero-buttons">
-          {data.buttons.map((item) => (
-            <a
-              href={item.link}
-              key={item.id}
-              target="_blank"
-              rel="noreferrer"
-              className={`hero-btn ${item.color}`}>
-              <span>{item.text}</span>
-            </a>
-          ))}
-        </div>
-        */}
       </div>
-
       <div className="hero-img">
-        <img src="/hero.png" alt="Logo" />
+        <img src="/hero.webp" alt="Logo" />
         <div className="hero-img-gradient" />
       </div>
     </section>

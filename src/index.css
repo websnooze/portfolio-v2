@@ -46,6 +46,7 @@ body {
   --bg-button: #ebebef;
   --bg-button-hover: #e4e4e9;
   --text-dark: #3c3c43;
+  --shadow-dark: 3px 3px 16.5px -4.5px #3c3c43;
   --always-dark: #3c3c43;
   --text-white: #ffffff;
   --font-rob: "Roboto", sans-serif;
@@ -67,6 +68,7 @@ body {
   --bg-button: #32363f;
   --bg-button-hover: #414853;
   --text-dark: #fffff5;
+  --shadow-dark: 3px 3px 16.5px -4.5px #fffff5;
   --text-white: #fffff5;
   --nav-glass: rgb(27 27 31 / 70%);
 }

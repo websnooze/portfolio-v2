@@ -1,0 +1,10 @@
+.work-id {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.work-id-wrapper {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 24px;
+}

@@ -25,6 +25,7 @@
   border-radius: 6px;
   align-items: center;
   justify-content: center;
+  line-height: 10px;
 }
 .home-lastworks-item p {
   opacity: 0.78;

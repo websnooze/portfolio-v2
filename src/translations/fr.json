@@ -43,6 +43,15 @@
       "github": "🐨 Github"
     }
   },
+  "errorPage": {
+    "hero": {
+      "title": "Erreur",
+      "subtTitle1": "404",
+      "subtTitle2": "Page introuvable",
+      "text": "La page que vous avez demandé n'existe pas ou plus.",
+      "button": "Retour à l'accueil"
+    }
+  },
   "footer": {
     "rights": "Tous droits réservés"
   }

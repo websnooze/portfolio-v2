@@ -1,0 +1,40 @@
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.works-item {
+  height: 350px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.works-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.works-item-block {
+  display: flex;
+  box-shadow: var(--shadow-dark);
+  border-radius: 12px;
+}
+.works-item-fade {
+  z-index: 1;
+  position: absolute;
+  background: var(--bg-white);
+  height: 100%;
+  width: 100%;
+}
+.works-item span {
+  font-family: var(--font-int);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+  z-index: 2;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
