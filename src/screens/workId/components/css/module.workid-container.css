@@ -1,3 +1,8 @@
+.workid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .workid-container-description {
   display: flex;
   flex-direction: column;

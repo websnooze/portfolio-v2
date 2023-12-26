@@ -6,11 +6,28 @@ import { WorkIdContainer, WorkIdHeader, WorkIdSide } from "./components";
 import { GITHUB_OWNER } from "../../utils/consts";
 
 import "./css/module.work-id.css";
+import { collection, onSnapshot, query, where } from "firebase/firestore";
+import { db } from "../../config/firebase";
 
 const WorkId = () => {
   const { workId } = useParams<{ workId: string }>();
   const [data, setData] = useState(null);
+  const [document, setDocument] = useState(null);
   const [readMe, setReadMe] = useState(null);
+
+  useEffect(() => {
+    const worksRef = collection(db, "projects");
+    const queryRef = query(worksRef, where("github_repo", "==", workId));
+
+    onSnapshot(queryRef, (snapshot) => {
+      const works = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+
+      setDocument(works[0]);
+    });
+  }, [workId]);
 
   useEffect(() => {
     const getRepos = async () => {
@@ -42,7 +59,6 @@ const WorkId = () => {
         },
       });
       const data = response;
-      console.log(data);
       setReadMe(data);
     };
     getReadMe();
@@ -50,14 +66,14 @@ const WorkId = () => {
 
   return (
     <section className="work-id container">
-      <WorkIdHeader thumbnail={data?.thumbnail} />
+      <WorkIdHeader thumbnail={document?.thumbnail} />
       <div className="work-id-wrapper">
         <WorkIdContainer
-          projectName={data?.name}
+          projectName={document?.title}
           description={readMe?.data}
           date={data?.updated_at}
         />
-        <WorkIdSide demo={data?.homepage} />
+        <WorkIdSide demo={data?.homepage} githubRepo={workId} />
       </div>
     </section>
   );

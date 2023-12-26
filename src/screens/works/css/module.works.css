@@ -5,9 +5,11 @@
 }
 .github-works-item-block {
   display: flex;
+  width: 100%;
 }
 .github-works-item {
   display: flex;
+  width: 100%;
   flex-direction: column;
   padding: 24px;
   background: var(--bg-card);

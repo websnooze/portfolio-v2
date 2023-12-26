@@ -8,3 +8,10 @@
   grid-template-columns: 4fr 2fr;
   gap: 24px;
 }
+@media (max-width: 639px) {
+  .work-id-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+}
