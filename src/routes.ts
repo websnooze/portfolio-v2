@@ -5,12 +5,10 @@ import {
   WORKS_ROUTE,
   WORKS_ID_ROUTE,
   CONTACT_ROUTE,
-  LOGIN_ROUTE,
 } from "./utils/consts";
 
 const Contact = lazy(() => import("./screens/contact"));
 const Home = lazy(() => import("./screens/home"));
-const Login = lazy(() => import("./screens/login"));
 const Works = lazy(() => import("./screens/works/GithubWorks"));
 const WorkId = lazy(() => import("./screens/workId"));
 
@@ -30,9 +28,5 @@ export const basic_Routes = [
   {
     path: CONTACT_ROUTE,
     Component: Contact,
-  },
-  {
-    path: LOGIN_ROUTE,
-    Component: Login,
   },
 ];
