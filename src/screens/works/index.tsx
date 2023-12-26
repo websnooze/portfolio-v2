@@ -34,6 +34,7 @@ const Works = () => {
           {data.map((item, index) => (
             <motion.div
               layout
+              key={item.id}
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -20, opacity: 0 }}
@@ -43,10 +44,7 @@ const Works = () => {
                 ease: "easeInOut",
               }}
               className="works-item-block">
-              <Link
-                key={item.id}
-                to={`/works/${item.slug}`}
-                className="works-item">
+              <Link to={`/works/${item.slug}`} className="works-item">
                 <motion.img
                   initial={{ scale: 1 }}
                   whileHover={{ scale: 1.1 }}

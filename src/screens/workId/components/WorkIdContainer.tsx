@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+
 import dayjs from "dayjs";
 import "dayjs/locale/fr";
 
@@ -12,8 +12,10 @@ const WorkIdContainer = ({ projectName, description, date }) => {
   return (
     <div className="workid-container">
       <h1>{projectName}</h1>
-      <h3>{dayjs.unix(date).format("DD MMMM YYYY")}</h3>
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{description}</ReactMarkdown>
+      <h3>{dayjs(date).format("DD MMMM YYYY")}</h3>
+      <div className="workid-container-description">
+        <ReactMarkdown>{description}</ReactMarkdown>
+      </div>
     </div>
   );
 };

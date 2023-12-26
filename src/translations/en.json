@@ -52,6 +52,9 @@
       "button": "Back to home"
     }
   },
+  "loginPage": {
+    "title": "Login"
+  },
   "footer": {
     "rights": "All rights reserved"
   }

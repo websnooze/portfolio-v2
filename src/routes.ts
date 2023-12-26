@@ -11,7 +11,7 @@ import {
 const Contact = lazy(() => import("./screens/contact"));
 const Home = lazy(() => import("./screens/home"));
 const Login = lazy(() => import("./screens/login"));
-const Works = lazy(() => import("./screens/works"));
+const Works = lazy(() => import("./screens/works/GithubWorks"));
 const WorkId = lazy(() => import("./screens/workId"));
 
 export const basic_Routes = [

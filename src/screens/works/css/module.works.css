@@ -1,40 +1,45 @@
-.works-grid {
+.github-works-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
-.works-item {
-  height: 350px;
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-}
-.works-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-}
-.works-item-block {
+.github-works-item-block {
   display: flex;
-  box-shadow: var(--shadow-dark);
+}
+.github-works-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--bg-card);
   border-radius: 12px;
-}
-.works-item-fade {
-  z-index: 1;
-  position: absolute;
-  background: var(--bg-white);
-  height: 100%;
-  width: 100%;
-}
-.works-item span {
   font-family: var(--font-int);
-  font-size: 15px;
+}
+.github-works-item h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.github-works-item p {
+  opacity: 0.78;
+  line-height: 24px;
+  font-size: 14px;
   font-weight: 500;
-  color: var(--text-dark);
-  z-index: 2;
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
+}
+.github-works-item__icon {
+  background: var(--bg-grey);
+  display: flex;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 10px;
+}
+
+@media (max-width: 639px) {
+  .github-works-grid {
+    display: flex;
+    flex-direction: column;
+  }
 }

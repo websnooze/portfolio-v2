@@ -1,28 +1,51 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { collection, onSnapshot, query, where } from "firebase/firestore";
 
-import { db } from "../../config/firebase";
+import { octokit } from "../../config/octokit";
 import { WorkIdContainer, WorkIdHeader, WorkIdSide } from "./components";
+import { GITHUB_OWNER } from "../../utils/consts";
 
 import "./css/module.work-id.css";
 
 const WorkId = () => {
   const { workId } = useParams<{ workId: string }>();
   const [data, setData] = useState(null);
+  const [readMe, setReadMe] = useState(null);
 
   useEffect(() => {
-    const worksRef = collection(db, "projects");
-    const queryRef = query(worksRef, where("slug", "==", workId));
-
-    onSnapshot(queryRef, (snapshot) => {
-      const works = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-
-      setData(works[0]);
-    });
+    const getRepos = async () => {
+      const response = await octokit.request("GET /repos/{owner}/{repo}", {
+        owner: GITHUB_OWNER,
+        repo: workId,
+        headers: {
+          accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+      });
+      const data = response.data;
+      setData(data);
+    };
+    getRepos();
+  }, [workId]);
+  useEffect(() => {
+    const getReadMe = async () => {
+      const response = await octokit.rest.repos.getContent({
+        owner: GITHUB_OWNER,
+        repo: workId,
+        path: "README.md",
+        mediaType: {
+          format: "raw",
+        },
+        headers: {
+          accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+      });
+      const data = response;
+      console.log(data);
+      setReadMe(data);
+    };
+    getReadMe();
   }, [workId]);
 
   return (
@@ -30,16 +53,11 @@ const WorkId = () => {
       <WorkIdHeader thumbnail={data?.thumbnail} />
       <div className="work-id-wrapper">
         <WorkIdContainer
-          projectName={data?.projectName}
-          description={data?.description}
-          date={data?.date?.seconds}
+          projectName={data?.name}
+          description={readMe?.data}
+          date={data?.updated_at}
         />
-        <WorkIdSide
-          frontTech={data?.frontTech}
-          backTech={data?.backTech}
-          entreprise={data?.entreprise}
-          demo={data?.demo}
-        />
+        <WorkIdSide demo={data?.homepage} />
       </div>
     </section>
   );
