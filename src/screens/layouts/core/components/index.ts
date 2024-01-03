@@ -6,3 +6,4 @@ export { default as ThemeSwitcher } from "./ThemeSwitcher";
 export { default as LangSwitcher } from "./LangSwitcher";
 export { default as HeaderDivider } from "./HeaderDivider";
 export { default as MobileThemeSwitcher } from "./MobileThemeSwitcher";
+export { default as MobileMenu } from "./MobileMenu";

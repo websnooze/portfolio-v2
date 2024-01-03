@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import MediaQuery from "react-responsive";
 
-import { HeaderDivider } from "../Topbar/modules";
+import { HeaderDivider } from "./components";
 
 import styles from "./css/footer.module.css";
 

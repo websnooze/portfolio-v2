@@ -6,9 +6,9 @@ import {
   LangSwitcher,
   MobileHeaderLinks,
   MobileThemeSwitcher,
-} from "..";
+} from ".";
 
-import styles from "./css/mobileMenu.module.css";
+import styles from "../css/mobileMenu.module.css";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

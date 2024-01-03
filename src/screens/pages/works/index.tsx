@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { GitHubWorksData } from "../../data/GitHubWorks";
+import { GitHubWorksData } from "../../../modules/core/data/GitHubWorks";
 
 import styles from "./css/works.module.css";
 

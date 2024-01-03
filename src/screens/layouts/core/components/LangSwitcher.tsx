@@ -4,9 +4,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { IoChevronDown } from "react-icons/io5";
 import MediaQuery from "react-responsive";
 
-import { Flags } from "../../../../../components";
+import { Flags } from "../../../../modules/core/components";
 import { langOptionsData } from "./data/langOptionsData";
-import { LangIcon } from "../../../../../icons";
+import { LangIcon } from "../../../../modules/core/icons";
 
 import styles from "../css/lang.module.css";
 

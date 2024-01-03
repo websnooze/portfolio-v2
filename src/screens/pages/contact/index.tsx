@@ -1,4 +1,4 @@
-import { ContactHero } from "./modules";
+import { ContactHero } from "./components";
 
 import "./css/contact.module.css";
 

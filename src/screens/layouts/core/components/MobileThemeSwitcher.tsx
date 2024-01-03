@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import styles from "../css/topbar.module.css";
-import classe from "./components/css/mobileMenu.module.css";
+import classe from "../css/mobileMenu.module.css";
 
 const MobileThemeSwitcher = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
 import { WorkIdContainer, WorkIdHeader, WorkIdSide } from "./components";
-import { GitHubWorksData } from "../../data/GitHubWorks";
+import { GitHubWorksData } from "../../../modules/core/data/GitHubWorks";
 
 import styles from "./css/workId.module.css";
 

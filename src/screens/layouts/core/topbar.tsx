@@ -7,8 +7,8 @@ import {
   HeaderSocials,
   LangSwitcher,
   ThemeSwitcher,
-} from "./modules";
-import { MobileMenu } from "./modules/components";
+  MobileMenu,
+} from "./components";
 
 import styles from "./css/topbar.module.css";
 

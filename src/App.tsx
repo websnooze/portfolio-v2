@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { HelmetProvider } from "react-helmet-async";
 
-import * as Layouts from "./layouts";
+import * as Layouts from "./screens/layouts";
 import { basic_Routes } from "./routes";
-import { ScrollToTop } from "./common";
-import NotFound from "./screens/error";
+import { ScrollToTop } from "./modules/core/common";
+import NotFound from "./screens/pages/error";
 
 import "react-toastify/dist/ReactToastify.css";
 
