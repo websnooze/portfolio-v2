@@ -7,6 +7,7 @@ import "./css/module.work-id.css";
 
 const WorkId = () => {
   const { workId } = useParams<{ workId: string }>();
+
   const data = GitHubWorksData;
 
   const selectedWork = data.find((work) => work.slug === workId);
