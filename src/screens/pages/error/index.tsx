@@ -10,7 +10,7 @@ const Error = () => {
       <div className={styles.ErrorText}>
         <div className={styles.ErrorTextTitle}>
           <h1 className={styles.ErrorTextGradient}>
-            {t("errorPage.hero.title")}
+            {t("errorPage.hero.title")} test-arbo
           </h1>
           <h1>{t("errorPage.hero.subtTitle1")}</h1>
           <h1>{t("errorPage.hero.subtTitle2")}</h1>
