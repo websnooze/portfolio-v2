@@ -14,9 +14,8 @@ const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
-  const toggleDropdown = (e) => {
+  const toggleDropdown = () => {
     setIsOpen(!isOpen);
-    e.stopPropagation();
   };
 
   const handleClickOutside = (e) => {
