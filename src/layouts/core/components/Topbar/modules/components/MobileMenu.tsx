@@ -8,7 +8,7 @@ import {
   MobileThemeSwitcher,
 } from "..";
 
-import "./css/module.mobile-menu.css";
+import styles from "./css/mobileMenu.module.css";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const MobileMenu = () => {
     if (
       ref.current &&
       !ref.current.contains(e.target) &&
-      e.target.className !== "mobile-menu-icon"
+      e.target.className !== styles.MobileMenuIcon
     ) {
       setIsOpen(false);
     }
@@ -36,23 +36,33 @@ const MobileMenu = () => {
   }, [ref]);
 
   return (
-    <div className="mobile-menu">
+    <div className={styles.MobileMenu}>
       <AnimatePresence mode="wait">
-        <div className="mobile-menu-icon" onClick={toggleDropdown}>
+        <div className={styles.MobileMenuIcon} onClick={toggleDropdown}>
           <motion.span
-            className={`mobile-tick-top ${
-              isOpen ? "mobile-tick-top-open" : "mobile-tick-top-closed"
-            }`}
+            className={
+              styles.MobileTickTop +
+              " " +
+              (isOpen ? styles.MobileTickTopOpen : styles.MobileTickTopClosed)
+            }
           />
           <motion.span
-            className={`mobile-tick-center ${
-              isOpen ? "mobile-tick-center-open" : "mobile-tick-center-closed"
-            }`}
+            className={
+              styles.MobileTickCenter +
+              " " +
+              (isOpen
+                ? styles.MobileTickCenterOpen
+                : styles.MobileTickCenterClosed)
+            }
           />
           <motion.span
-            className={`mobile-tick-bottom ${
-              isOpen ? "mobile-tick-bottom-open" : "mobile-tick-bottom-closed"
-            }`}
+            className={
+              styles.MobileTickBottom +
+              " " +
+              (isOpen
+                ? styles.MobileTickBottomOpen
+                : styles.MobileTickBottomClosed)
+            }
           />
         </div>
       </AnimatePresence>
@@ -63,9 +73,9 @@ const MobileMenu = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="mobile-menu-container">
-            <motion.div className="mobile-menu-block">
-              <div className="mobile-menu-links">
+            className={styles.MobileMenuContainer}>
+            <motion.div className={styles.MobileMenuBlock}>
+              <div className={styles.MobileMenuLinks}>
                 <MobileHeaderLinks setIsOpen={setIsOpen} />
               </div>
               <LangSwitcher />

@@ -4,7 +4,7 @@ footer {
   border-top: 1px solid var(--bg-grey);
   margin-top: 134px;
 }
-.footer {
+.Footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,19 +13,19 @@ footer {
   font-size: 14px;
   font-weight: 500;
 }
-.footer-link {
+.FooterLink {
   font-family: var(--font-int);
   font-size: 14px;
   font-weight: 500;
   color: var(--text-dark);
   transition: all ease 0.3s;
 }
-.footer-link:hover {
+.FooterLink:hover {
   color: var(--bg-blue);
 }
 
 @media (max-width: 639px) {
-  .footer {
+  .Footer {
     display: flex;
     flex-direction: column;
     align-items: center;

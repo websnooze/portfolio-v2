@@ -1,7 +1,5 @@
 import { HomeHero, HomeLastWorks } from "./components";
 
-import "./css/module.home.css";
-
 const Home = () => {
   return (
     <>

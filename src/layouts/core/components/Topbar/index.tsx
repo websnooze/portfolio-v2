@@ -8,23 +8,23 @@ import {
   LangSwitcher,
   ThemeSwitcher,
 } from "./modules";
-
-import "./css/module.topbar.css";
 import { MobileMenu } from "./modules/components";
+
+import styles from "./css/topbar.module.css";
 
 const Topbar = () => {
   return (
     <header>
       <MediaQuery maxWidth={639}>
-        <nav className="nav-container">
+        <nav className={styles.NavContainer}>
           <HeaderLogo />
           <MobileMenu />
         </nav>
       </MediaQuery>
       <MediaQuery minWidth={640}>
-        <nav className="nav-container">
+        <nav className={styles.NavContainer}>
           <HeaderLogo />
-          <div className="topbar-right">
+          <div className={styles.TopbarRight}>
             <HeaderLinks />
             <HeaderDivider />
             <ThemeSwitcher />

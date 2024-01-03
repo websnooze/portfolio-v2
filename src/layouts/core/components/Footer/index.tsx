@@ -4,7 +4,7 @@ import MediaQuery from "react-responsive";
 
 import { HeaderDivider } from "../Topbar/modules";
 
-import "./css/module.footer.css";
+import styles from "./css/footer.module.css";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -12,19 +12,19 @@ const Footer = () => {
   return (
     <footer>
       <MediaQuery maxWidth={639}>
-        <div className="footer container">
+        <div className={styles.Footer + " container"}>
           <span>Copyright © {currentYear}</span>
-          <Link to="/" className="footer-link">
+          <Link to="/" className={styles.FooterLink}>
             Websnooze.xyz
           </Link>
           <span>{t("footer.rights")}</span>
         </div>
       </MediaQuery>
       <MediaQuery minWidth={640}>
-        <div className="footer container">
+        <div className={styles.Footer + " container"}>
           <span>Copyright © {currentYear}</span>
           <HeaderDivider />
-          <Link to="/" className="footer-link">
+          <Link to="/" className={styles.FooterLink}>
             Websnooze.xyz
           </Link>
           <HeaderDivider />

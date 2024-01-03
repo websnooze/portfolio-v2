@@ -32,11 +32,6 @@ body {
   min-width: 320px;
   margin: auto;
 }
-.nav-container {
-  max-width: 1224px;
-  min-width: 320px;
-  margin: auto;
-}
 
 :root {
   --bg-white: #ffffff;
@@ -96,9 +91,6 @@ body {
 
 @media (max-width: 639px) {
   main {
-    padding: 0 20px;
-  }
-  .nav-container {
     padding: 0 20px;
   }
 }

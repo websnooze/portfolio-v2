@@ -1,9 +1,9 @@
-.home-lastworks {
+.HomeLastWorks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
-.home-lastworks-item {
+.HomeLastWorksItem {
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -11,12 +11,12 @@
   border-radius: 12px;
   font-family: var(--font-int);
 }
-.home-lastworks-item h4 {
+.HomeLastWorksItem h4 {
   padding-top: 20px;
   padding-bottom: 10px;
   font-weight: 600;
 }
-.home-lastworks-item__icon {
+.HomeLastWorksItem__Icon {
   background: var(--bg-grey);
   display: flex;
   width: 48px;
@@ -27,7 +27,7 @@
   justify-content: center;
   line-height: 10px;
 }
-.home-lastworks-item p {
+.HomeLastWorksItem p {
   opacity: 0.78;
   line-height: 24px;
   font-size: 14px;
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 639px) {
-  .home-lastworks {
+  .HomeLastWorks {
     display: flex;
     flex-direction: column;
   }

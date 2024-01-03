@@ -1,17 +1,17 @@
-.lang-switch {
+.LangSwitch {
   position: relative;
 }
-.lang-switcher {
+.LangSwitcher {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
   cursor: pointer;
 }
-.lang-switcher-chevron {
+.LangSwitcherChevron {
   display: flex;
 }
-.lang-switcher-container {
+.LangSwitcherContainer {
   position: absolute;
   background: var(--bg-card);
   border: 1px solid var(--bg-divider);
@@ -26,7 +26,7 @@
   z-index: 9999;
   font-family: var(--font-int);
 }
-.lang-switcher-item {
+.LangSwitcherItem {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -39,16 +39,44 @@
   background: transparent;
   transition: all ease 0.3s;
 }
-.lang-switcher-item:hover {
+.LangSwitcherItem:hover {
   background: var(--bg-grey);
 }
-.lang-switcher-item div {
+.LangSwitcherItem div {
   display: flex;
 }
-.lang-switcher-item span {
+.LangSwitcherItem span {
   font-size: 14px;
   font-weight: 500;
 }
-.lang-switcher-item-flags {
+.LangSwitcherItemFlags {
   border-radius: 6px;
+}
+.LangSwitcherMobileContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.MobileLang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.MobileLangIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.MobileLangLabel {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 639px) {
+  .LangSwitcherItem {
+    width: 100%;
+  }
 }

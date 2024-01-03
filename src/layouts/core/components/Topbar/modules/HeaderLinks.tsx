@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { headerLinks } from "./data/headerLinks";
 import { useTranslation } from "react-i18next";
 
+import styles from "../css/topbar.module.css";
+
 const HeaderLinks = () => {
   const { t } = useTranslation();
 
@@ -10,7 +12,9 @@ const HeaderLinks = () => {
       key={item.id}
       to={item.link}
       className={({ isActive }) =>
-        `${isActive ? "topbar-item topbar-item-active" : "topbar-item"}`
+        isActive
+          ? styles.TopbarItem + " " + styles.TopbarItemActive
+          : styles.TopbarItem
       }>
       <span>{t(item.name)}</span>
     </NavLink>

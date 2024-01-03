@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 import { homeLastWorksData } from "./data/homeLastWorksData";
 
-import "./css/module.last-works.css";
+import styles from "./css/lastWorks.module.css";
 
 const HomeLastWorks = () => {
   const { t } = useTranslation();
   const data = homeLastWorksData;
   return (
-    <section className="home-lastworks container">
+    <section className={styles.HomeLastWorks + " container"}>
       {data.map((item, index) => (
         <motion.div
           key={item.id}
@@ -21,8 +21,8 @@ const HomeLastWorks = () => {
             delay: index * 0.2,
             ease: "linear",
           }}
-          className="home-lastworks-item">
-          <div className="home-lastworks-item__icon">{item.icon}</div>
+          className={styles.HomeLastWorksItem}>
+          <div className={styles.HomeLastWorksItem__Icon}>{item.icon}</div>
           <h4>{t(item.title)}</h4>
           <p>{t(item.text)}</p>
         </motion.div>

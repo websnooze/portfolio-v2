@@ -1,13 +1,9 @@
 import { ContactHero } from "./modules";
 
-import "./css/module.contact.css";
+import "./css/contact.module.css";
 
 const Contact = () => {
-  return (
-    <>
-      <ContactHero />
-    </>
-  );
+  return <ContactHero />;
 };
 
 export default Contact;

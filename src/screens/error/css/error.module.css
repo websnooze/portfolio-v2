@@ -1,41 +1,41 @@
-.error {
+.Error {
   display: flex;
   align-items: center;
   padding: 120px 0 80px 0;
   gap: 40px;
 }
-.error-text {
+.ErrorText {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.error-text-title {
+.ErrorTextTitle {
   display: flex;
   flex-direction: column;
   width: 550px;
 }
-.error-text-title h1 {
+.ErrorTextTitle h1 {
   line-height: 64px;
   font-size: 56px;
 }
-.error-text p {
+.ErrorText p {
   line-height: 36px;
   font-size: 24px;
   max-width: 530px;
   opacity: 0.78;
 }
-.error-text-gradient {
-  background: var(--text-gradient);
+.ErrorTextGradient {
+  background: var(-text-gradient);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkittext-fill-color: transparent;
   width: fit-content;
 }
-.error-buttons {
+.ErrorButtons {
   display: flex;
   gap: 12px;
 }
-.error-btn {
+.ErrorBtn {
   background: var(--bg-button);
   border-radius: 1000px;
   height: 40px;
@@ -44,26 +44,26 @@
   align-items: center;
   transition: all ease 0.3s;
 }
-.error-btn:hover {
+.ErrorBtn:hover {
   background: var(--bg-button-hover);
 }
-.error-blue {
+.ErrorBlue {
   background: var(--bg-blue);
   transition: all ease 0.3s;
 }
-.error-blue:hover {
+.ErrorBlue:hover {
   background: var(--bg-blue-hover);
 }
-.error-blue span {
-  color: var(--text-white) !important;
+.ErrorBlue span {
+  color: var(-text-white) !important;
 }
-.error-btn span {
-  color: var(--text-dark);
+.ErrorBtn span {
+  color: var(-text-dark);
   font-weight: 500;
   font-size: 14px;
   font-family: var(--font-int);
 }
-.error-img {
+.ErrorImg {
   position: relative;
   display: flex;
   justify-content: center;
@@ -71,7 +71,7 @@
   height: 100%;
   transform: translate(60px, 25px);
 }
-.error-img-gradient {
+.ErrorImgGradient {
   width: 320px;
   height: 320px;
   position: absolute;
@@ -82,14 +82,14 @@
   filter: blur(72px);
   transform: translate(-50%, -50%);
 }
-.error-img img {
+.ErrorImg img {
   width: 450px;
   height: 450px;
   position: relative;
   object-fit: contain;
   z-index: 1;
 }
-.error-home-btn {
+.ErrorHomeBtn {
   height: 45px;
   background: var(--bg-blue);
   color: var(--always-dark);
@@ -101,40 +101,43 @@
   border-radius: 1000px;
   transition: all ease 0.3s;
 }
-.error-home-btn span {
+.ErrorHomeBtn span {
   font-size: 16px;
   font-weight: 500;
   font-family: var(--font-int);
 }
-.error-home-btn:hover {
+.ErrorHomeBtn:hover {
   filter: brightness(80%);
 }
 @media (max-width: 639px) {
-  .error {
+  .Error {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
-  .error-img {
+  .ErrorImg {
     transform: translate(0);
   }
-  .error-img-gradient {
+  .ErrorImgGradient {
     width: 150px;
     height: 150px;
   }
-  .error-img img {
+  .ErrorImg img {
     width: 250px;
     height: 250px;
   }
-  .error-text-title {
+  .ErrorTextTitle {
     width: 100%;
     align-items: center;
   }
-  .error-text-title h1 {
+  .ErrorTextTitle h1 {
     line-height: 35px;
     font-size: 30px;
   }
-  .error-text p {
+  .ErrorText {
+    align-items: center;
+  }
+  .ErrorText p {
     line-height: 25px;
     text-align: center;
     font-size: 16px;

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
+import styles from "../css/topbar.module.css";
+
 const ThemeSwitcher = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
 
@@ -32,7 +34,7 @@ const ThemeSwitcher = () => {
   }, [isLightTheme]);
 
   return (
-    <div className="theme-toggle" onClick={toggleTheme}>
+    <div className={styles.ThemeToggle} onClick={toggleTheme}>
       <AnimatePresence mode="wait">
         {isLightTheme ? (
           <motion.svg

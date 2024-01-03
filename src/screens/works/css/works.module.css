@@ -1,13 +1,13 @@
-.github-works-grid {
+.GithubWorksGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
-.github-works-item-block {
+.GithubWorksItemBlock {
   display: flex;
   width: 100%;
 }
-.github-works-item {
+.GithubWorksItem {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -16,18 +16,18 @@
   border-radius: 12px;
   font-family: var(--font-int);
 }
-.github-works-item h4 {
+.GithubWorksItem h4 {
   padding-top: 20px;
   padding-bottom: 10px;
   font-weight: 600;
 }
-.github-works-item p {
+.GithubWorksItem p {
   opacity: 0.78;
   line-height: 24px;
   font-size: 14px;
   font-weight: 500;
 }
-.github-works-item__icon {
+.GithubWorksItem__Icon {
   background: var(--bg-grey);
   display: flex;
   width: 48px;
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: 639px) {
-  .github-works-grid {
+  .GithubWorksGrid {
     display: flex;
     flex-direction: column;
   }

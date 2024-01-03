@@ -1,26 +1,28 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import "./css/module.error.css";
+import styles from "./css/error.module.css";
 
 const Error = () => {
   const { t } = useTranslation();
   return (
-    <section className="error container">
-      <div className="error-text">
-        <div className="error-text-title">
-          <h1 className="error-text-gradient">{t("errorPage.hero.title")}</h1>
+    <section className={styles.Error + " container"}>
+      <div className={styles.ErrorText}>
+        <div className={styles.ErrorTextTitle}>
+          <h1 className={styles.ErrorTextGradient}>
+            {t("errorPage.hero.title")}
+          </h1>
           <h1>{t("errorPage.hero.subtTitle1")}</h1>
           <h1>{t("errorPage.hero.subtTitle2")}</h1>
         </div>
         <p>{t("errorPage.hero.text")}</p>
-        <Link to="/" className="error-home-btn">
+        <Link to="/" className={styles.ErrorHomeBtn}>
           <span>{t("errorPage.hero.button")}</span>
         </Link>
       </div>
-      <div className="error-img">
+      <div className={styles.ErrorImg}>
         <img src="/error.webp" alt="Logo" />
-        <div className="error-img-gradient" />
+        <div className={styles.ErrorImgGradient} />
       </div>
     </section>
   );

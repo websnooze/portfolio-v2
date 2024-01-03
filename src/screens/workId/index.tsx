@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { WorkIdContainer, WorkIdHeader, WorkIdSide } from "./components";
 import { GitHubWorksData } from "../../data/GitHubWorks";
 
-import "./css/module.work-id.css";
+import styles from "./css/workId.module.css";
 
 const WorkId = () => {
   const { workId } = useParams<{ workId: string }>();
@@ -13,9 +13,9 @@ const WorkId = () => {
   const selectedWork = data.find((work) => work.slug === workId);
 
   return (
-    <section className="work-id container">
+    <section className={styles.WorkId + " container"}>
       <WorkIdHeader thumbnail={selectedWork.thumbnail} />
-      <div className="work-id-wrapper">
+      <div className={styles.WorkIdWrapper}>
         <WorkIdContainer
           projectIcon={selectedWork.icon}
           projectName={selectedWork.title}

@@ -1,18 +1,17 @@
-.work-id {
+.WorkId {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.work-id-wrapper {
+.WorkIdWrapper {
   display: grid;
   grid-template-columns: 4fr 2fr;
   gap: 24px;
 }
 @media (max-width: 639px) {
-  .work-id-wrapper {
+  .WorkIdWrapper {
     display: flex;
     flex-direction: column-reverse;
     gap: 24px;
   }
 }
-/* End */

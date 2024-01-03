@@ -1,5 +1,7 @@
+import styles from "../css/topbar.module.css";
+
 const HeaderDivider = () => {
-  return <div className="topbar-divider" />;
+  return <div className={styles.TopbarDivider} />;
 };
 
 export default HeaderDivider;

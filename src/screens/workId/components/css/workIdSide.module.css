@@ -1,4 +1,4 @@
-.workid-side {
+.WorkIdSide {
   background: var(--bg-card);
   padding: 20px;
   border-radius: 12px;
@@ -7,35 +7,35 @@
   gap: 25px;
   height: fit-content;
 }
-.workid-side-demo {
+.WorkIdSideDemo {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 7px;
 }
-.demo-enabled {
+.DemoEnabled {
   cursor: pointer;
 }
-.demo-disabled {
+.DemoDisabled {
   cursor: not-allowed;
 }
-.workid-side-languages {
+.WorkIdSideLanguages {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.workid-side-languages-item {
+.WorkIdSideLanguagesItem {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.workid-side-languages-item h1 {
+.WorkIdSideLanguagesItem h1 {
   font-size: 14px;
 }
-.workid-side-languages-item p {
+.WorkIdSideLanguagesItem p {
   font-size: 13px;
 }
-.workid-side-languages-item-progress-container {
+.WorkIdSideLanguagesItemProgressContainer {
   background: var(--bg-grey);
   height: 10px;
   display: flex;
@@ -43,7 +43,7 @@
   border-radius: 1000px;
   align-items: center;
 }
-.workid-side-languages-item-progress {
+.WorkIdSideLanguagesItemProgress {
   background: var(--bg-blue);
   min-width: 3%;
   max-width: 100%;

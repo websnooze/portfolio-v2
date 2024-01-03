@@ -18,46 +18,68 @@ nav {
   width: 100%;
 }
 
-.topbar-right {
+.NavContainer {
+  max-width: 1224px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.TopbarRight {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 24px;
 }
-.topbar-divider {
+.TopbarDivider {
   width: 1px;
   height: 24px;
   background: var(--bg-divider);
 }
-.topbar-item {
+.TopbarItem {
   font-size: 14px;
   font-weight: 500;
   color: var(--text-dark);
   font-family: var(--font-int);
   transition: all ease 0.3s;
 }
-.topbar-item-active {
+.TopbarItemActive {
   color: var(--bg-blue);
 }
-.topbar-item:hover {
+.TopbarItem:hover {
   color: var(--bg-blue);
 }
-.header-socials {
+.HeaderSocials {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.header-socials-item {
+.HeaderSocialsItem {
   display: flex;
   font-size: 20px;
   color: var(--text-dark);
   opacity: 0.78;
   transition: all ease 0.3s;
 }
-.header-socials-item:hover {
+.HeaderSocialsItem:hover {
   opacity: 1;
 }
-.theme-toggle {
+.ThemeToggle {
   display: flex;
   cursor: pointer;
+}
+@media (max-width: 639px) {
+  .NavContainer {
+    padding: 0 20px;
+  }
+  .TopbarItem {
+    height: 50px;
+    border-bottom: 1px solid var(--bg-divider);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+  .HeaderSocials {
+    width: 100%;
+    justify-content: center;
+  }
 }

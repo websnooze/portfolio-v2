@@ -1,13 +1,15 @@
 import { headerSocials } from "./data/headerSocials";
 
+import styles from "../css/topbar.module.css";
+
 const HeaderSocials = () => {
   const data = headerSocials;
   return (
-    <div className="header-socials">
+    <div className={styles.HeaderSocials}>
       {data.map((item) => (
         <a
           key={item.id}
-          className="header-socials-item"
+          className={styles.HeaderSocialsItem}
           href={item.link}
           target="_blank"
           rel="noreferrer">

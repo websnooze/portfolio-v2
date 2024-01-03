@@ -1,8 +1,8 @@
-import "./css/module.workid-header.css";
+import styles from "./css/workIdHeader.module.css";
 
 const WorkIdHeader = ({ thumbnail }) => {
   return (
-    <div className="workid-header">
+    <div className={styles.WorkIdHeader}>
       <img src={thumbnail} alt="header" />
     </div>
   );

@@ -1,28 +1,28 @@
-.workid-container {
+.WorkIdContainer {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.workid-container-description {
+.WorkIdContainerDescription {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.workid-container-description h1 {
+.WorkIdContainerDescription h1 {
   padding-bottom: 8px;
   border-bottom: 1px solid #30363d;
 }
-.workid-container-description ul {
+.WorkIdContainerDescription ul {
   margin-left: 50px;
 }
-.workid-container-description ul li a {
+.WorkIdContainerDescription ul li a {
   color: var(--bg-blue);
 }
-.workid-container-description blockquote {
+.WorkIdContainerDescription blockquote {
   color: #8d8d8f;
   padding-left: 15px;
   border-left: 4px solid #30363d;
 }
-.workid-container-description blockquote p a {
+.WorkIdContainerDescription blockquote p a {
   color: var(--bg-blue);
 }

@@ -1,41 +1,41 @@
-.contact {
+.Hero {
   display: flex;
   align-items: center;
   padding: 120px 0 80px 0;
   gap: 40px;
 }
-.contact-text {
+.HeroText {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.contact-text-title {
+.HeroTextTitle {
   display: flex;
   flex-direction: column;
   width: 550px;
 }
-.contact-text-title h1 {
+.HeroTextTitle h1 {
   line-height: 64px;
   font-size: 56px;
 }
-.contact-text p {
+.HeroText p {
   line-height: 36px;
   font-size: 24px;
   max-width: 530px;
   opacity: 0.78;
 }
-.contact-text-gradient {
+.HeroTextGradient {
   background: var(--text-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
 }
-.contact-buttons {
+.HeroButtons {
   display: flex;
   gap: 12px;
 }
-.contact-btn {
+.HeroBtn {
   background: var(--bg-button);
   border-radius: 1000px;
   height: 40px;
@@ -44,28 +44,26 @@
   align-items: center;
   transition: all ease 0.3s;
 }
-.contact-btn:hover {
+.HeroBtn:hover {
   background: var(--bg-button-hover);
 }
-.contact-blue {
+.HeroBlue {
   background: var(--bg-blue);
   transition: all ease 0.3s;
 }
-.contact-blue:hover {
-  background: var(--bg-blue);
+.HeroBlue:hover {
+  background: var(--bg-blue-hover);
 }
-.contact-blue span {
-  color: var(--always-dark) !important;
-  font-weight: 600 !important;
-  transition: all ease 0.3s;
+.HeroBlue span {
+  color: var(--text-white) !important;
 }
-.contact-btn span {
+.HeroBtn span {
   color: var(--text-dark);
   font-weight: 500;
   font-size: 14px;
   font-family: var(--font-int);
 }
-.contact-img {
+.HeroImg {
   position: relative;
   display: flex;
   justify-content: center;
@@ -73,7 +71,7 @@
   height: 100%;
   transform: translate(60px, 25px);
 }
-.contact-img-gradient {
+.HeroImgGradient {
   width: 320px;
   height: 320px;
   position: absolute;
@@ -84,7 +82,7 @@
   filter: blur(72px);
   transform: translate(-50%, -50%);
 }
-.contact-img img {
+.HeroImg img {
   width: 450px;
   height: 450px;
   position: relative;
@@ -93,39 +91,34 @@
 }
 
 @media (max-width: 639px) {
-  .contact {
+  .Hero {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
   }
-  .contact-img {
+  .HeroImg {
     transform: translate(0);
   }
-  .contact-img-gradient {
+  .HeroImgGradient {
     width: 150px;
     height: 150px;
   }
-  .contact-img img {
+  .HeroImg img {
     width: 250px;
     height: 250px;
   }
-  .contact-text-title {
+  .HeroTextTitle {
     width: 100%;
     align-items: center;
   }
-  .contact-text-title h1 {
+  .HeroTextTitle h1 {
     line-height: 35px;
     font-size: 30px;
   }
-  .contact-text p {
+  .HeroText p {
     line-height: 25px;
     text-align: center;
     font-size: 16px;
     max-width: 100%;
-  }
-  .contact-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
   }
 }

@@ -1,11 +1,11 @@
-.mobile-menu-icon {
+.MobileMenuIcon {
   position: relative;
   width: 16px;
   height: 14px;
   cursor: pointer;
   overflow: hidden;
 }
-.mobile-menu-container {
+.MobileMenuContainer {
   position: absolute;
   background: var(--bg-white);
   top: 60px;
@@ -17,7 +17,7 @@
   width: 100%;
   height: 100vh;
 }
-.mobile-menu-block {
+.MobileMenuBlock {
   padding: 40px 40px 96px;
   border-radius: 12px;
   display: flex;
@@ -27,29 +27,13 @@
   width: 100%;
   gap: 25px;
 }
-.mobile-menu-links {
+.MobileMenuLinks {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.mobile-lang {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.mobile-lang-icon {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-}
-.mobile-lang-label {
-  font-size: 14px;
-  font-weight: 400;
-}
-.mobile-theme {
+
+.MobileTheme {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,94 +43,73 @@
   padding: 0 16px;
   border-radius: 8px;
 }
-.lang-switcher-mobile-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.mobile-theme-label {
+
+.MobileThemeLabel {
   font-size: 12px;
   font-weight: 400;
   opacity: 0.78;
 }
 
-.mobile-tick-top {
+.MobileTickTop {
   position: absolute;
   width: 16px;
   height: 2px;
   background-color: var(--text-dark);
   transition: top 0.25s, background-color 0.5s, transform 0.25s;
 }
-.mobile-tick-top-open {
+.MobileTickTopOpen {
   top: 6px;
   transform: translate(0) rotate(225deg);
 }
-.mobile-tick-top-closed {
+.MobileTickTopClosed {
   top: 0;
   left: 0;
   transform: translate(0);
 }
-.mobile-menu-icon:hover > .mobile-tick-top-closed {
+.MobileMenuIcon:hover > .MobileTickTopClosed {
   top: 0;
   left: 0;
   transform: translate(4px);
 }
-.mobile-tick-center {
+.MobileTickCenter {
   position: absolute;
   width: 16px;
   height: 2px;
   background-color: var(--text-dark);
   transition: top 0.25s, background-color 0.5s, transform 0.25s;
 }
-.mobile-tick-center-open {
+.MobileTickCenterOpen {
   top: 6px;
   transform: translate(16px);
 }
-.mobile-tick-center-closed {
+.MobileTickCenterClosed {
   top: 6px;
   left: 0;
   transform: translate(8px);
 }
-.mobile-menu-icon:hover > .mobile-tick-center-closed {
+.MobileMenuIcon:hover > .MobileTickCenterClosed {
   top: 6px;
   left: 0;
   transform: translate(0);
 }
-.mobile-tick-bottom {
+.MobileTickBottom {
   position: absolute;
   width: 16px;
   height: 2px;
   background-color: var(--text-dark);
   transition: top 0.25s, background-color 0.5s, transform 0.25s;
 }
-.mobile-tick-bottom-open {
+.MobileTickBottomOpen {
   top: 6px;
   transform: translate(0) rotate(-225deg);
 }
-.mobile-tick-bottom-closed {
+.MobileTickBottomClosed {
   top: 12px;
   left: 0;
   transform: translate(4px);
 }
-.mobile-menu-icon:hover > .mobile-tick-bottom-closed {
+.MobileMenuIcon:hover > .MobileTickBottomClosed {
   top: 12px;
   left: 0;
   transform: translate(8px);
-}
-@media (max-width: 639px) {
-  .topbar-item {
-    height: 50px;
-    border-bottom: 1px solid var(--bg-divider);
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-  }
-  .header-socials {
-    width: 100%;
-    justify-content: center;
-  }
-  .lang-switcher-item {
-    width: 100%;
-  }
 }

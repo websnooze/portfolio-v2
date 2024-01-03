@@ -1,16 +1,16 @@
 import ReactMarkdown from "react-markdown";
 
-import "./css/module.workid-container.css";
+import styles from "./css/workIdContainer.module.css";
 
 const WorkIdContainer = ({ projectIcon, projectName, description, date }) => {
   return (
-    <div className="workid-container">
+    <div className={styles.WorkIdContainer}>
       <h1>
         {projectIcon}
         {projectName}
       </h1>
       <h3>{date}</h3>
-      <div className="workid-container-description">
+      <div className={styles.WorkIdContainerDescription}>
         <ReactMarkdown children={description} />
       </div>
     </div>

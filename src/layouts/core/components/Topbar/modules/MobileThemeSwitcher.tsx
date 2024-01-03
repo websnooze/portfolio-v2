@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
+import styles from "../css/topbar.module.css";
+import classe from "./components/css/mobileMenu.module.css";
+
 const MobileThemeSwitcher = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const { t } = useTranslation();
@@ -34,9 +37,11 @@ const MobileThemeSwitcher = () => {
   }, [isLightTheme]);
 
   return (
-    <div className="mobile-theme" onClick={toggleTheme}>
-      <span className="mobile-theme-label">{t("navbar.mobile.theme")}</span>
-      <div className="theme-toggle">
+    <div className={classe.MobileTheme} onClick={toggleTheme}>
+      <span className={classe.MobileThemeLabel}>
+        {t("navbar.mobile.theme")}
+      </span>
+      <div className={styles.ThemeToggle}>
         <AnimatePresence mode="wait">
           {isLightTheme ? (
             <motion.svg

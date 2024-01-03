@@ -1,25 +1,26 @@
 import { useTranslation } from "react-i18next";
 
 import { homeHeroData } from "./data/homeHeroData";
+import heroImg from "../../../assets/hero.webp";
 
-import "./css/module.home-hero.css";
+import styles from "./css/homeHero.module.css";
 
 const HomeHero = () => {
   const { t } = useTranslation();
   const data = homeHeroData;
   return (
-    <section className="hero container">
-      <div className="hero-text">
-        <div className="hero-text-title">
-          <h1 className="hero-text-gradient">{data.title}</h1>
+    <section className={styles.Hero + " container"}>
+      <div className={styles.HeroText}>
+        <div className={styles.HeroTextTitle}>
+          <h1 className={styles.HeroTextGradient}>{data.title}</h1>
           <h1>{t(data.subtitle1)}</h1>
           <h1>{t(data.subtitle2)}</h1>
         </div>
         <p>{t(data.text)}</p>
       </div>
-      <div className="hero-img">
-        <img src="/hero.webp" alt="Logo" />
-        <div className="hero-img-gradient" />
+      <div className={styles.HeroImg}>
+        <img src={heroImg} alt="Logo" />
+        <div className={styles.HeroImgGradient} />
       </div>
     </section>
   );
