@@ -5,12 +5,12 @@ import {
   WORKS_ROUTE,
   WORKS_ID_ROUTE,
   CONTACT_ROUTE,
-} from "./utils/consts";
+} from "./modules/core/utils";
 
-const Contact = lazy(() => import("./screens/contact"));
-const Home = lazy(() => import("./screens/home"));
-const Works = lazy(() => import("./screens/works"));
-const WorkId = lazy(() => import("./screens/workId"));
+const Contact = lazy(() => import("./screens/pages/contact"));
+const Home = lazy(() => import("./screens/pages/home"));
+const Works = lazy(() => import("./screens/pages/works"));
+const WorkId = lazy(() => import("./screens/pages/workId"));
 
 export const basic_Routes = [
   {
