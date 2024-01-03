@@ -9,7 +9,7 @@ const Flags = ({ countryCode, width, height, className }) => {
   if (!countryData) {
     return (
       <ReactSVG
-        src="/src/assets/flags/Unknown.svg"
+        src="/assets/flags/Unknown.svg"
         beforeInjection={(svg) => {
           svg.setAttribute("class", className);
           svg.setAttribute("width", width);
@@ -19,7 +19,7 @@ const Flags = ({ countryCode, width, height, className }) => {
     );
   }
 
-  const flagPath = `/src/assets/flags/${countryData.countryCode}.svg`;
+  const flagPath = `/assets/flags/${countryData.countryCode}.svg`;
 
   return (
     <ReactSVG

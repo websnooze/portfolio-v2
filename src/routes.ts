@@ -9,7 +9,7 @@ import {
 
 const Contact = lazy(() => import("./screens/contact"));
 const Home = lazy(() => import("./screens/home"));
-const Works = lazy(() => import("./screens/works/GithubWorks"));
+const Works = lazy(() => import("./screens/works"));
 const WorkId = lazy(() => import("./screens/workId"));
 
 export const basic_Routes = [

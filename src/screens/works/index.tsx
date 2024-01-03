@@ -1,68 +1,40 @@
-import { useEffect, useState } from "react";
-import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
-import { db } from "../../config/firebase";
-import { CreateWork } from "./components";
+import { GitHubWorksData } from "../../data/GitHubWorks";
 
 import "./css/module.works.css";
 
 const Works = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const worksRef = collection(db, "projects");
-    const q = query(worksRef, orderBy("date", "desc"));
-    onSnapshot(q, (snapshot) => {
-      const tournaments = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-      setData(tournaments);
-    });
-  }, []);
+  const data = GitHubWorksData;
 
   return (
-    <section className="works container">
-      <article className="works-top">
-        <h1>Works</h1>
-        <CreateWork />
-      </article>
-      <article className="works-grid">
-        <AnimatePresence mode="wait">
-          {data.map((item, index) => (
-            <motion.div
-              layout
-              key={item.id}
-              initial={{ x: -20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -20, opacity: 0 }}
-              transition={{
-                duration: 0.3,
-                delay: index * 0.3,
-                ease: "easeInOut",
-              }}
-              className="works-item-block">
-              <Link to={`/works/${item.slug}`} className="works-item">
-                <motion.img
-                  initial={{ scale: 1 }}
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3, ease: "easeIn" }}
-                  src={item.thumbnail}
-                  alt="project-img"
-                />
-                <motion.div
-                  initial={{ opacity: 0.4 }}
-                  transition={{ duration: 0.3, ease: "easeIn" }}
-                  className="works-item-fade"
-                />
-                <span>{item.projectName}</span>
-              </Link>
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </article>
+    <section className="github-works-grid container">
+      <AnimatePresence>
+        {data.map((item, index) => (
+          <motion.div
+            key={item.id}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            transition={{
+              duration: 0.2,
+              delay: index * 0.2,
+              ease: "linear",
+            }}
+            className="github-works-item-block">
+            <Link to={`/works/${item.slug}`} className="github-works-item">
+              <div className="github-works-item__icon">{item.icon}</div>
+              <h4>{item.title}</h4>
+              <p>
+                {item.description.length > 100
+                  ? `${item.description.substring(0, 100)}...`
+                  : item.description}
+              </p>
+            </Link>
+          </motion.div>
+        ))}
+      </AnimatePresence>
     </section>
   );
 };

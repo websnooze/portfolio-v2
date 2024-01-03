@@ -52,6 +52,11 @@ body {
   --shadow-dark: 3px 3px 16.5px -4.5px #3c3c43;
   --always-dark: #3c3c43;
   --text-white: #ffffff;
+  --color-ts: #3178c6;
+  --color-js: #f1e05a;
+  --color-css: #563d7c;
+  --color-html: #e34c26;
+  --color-other: #ededed;
   --font-rob: "Roboto", sans-serif;
   --font-int: "Inter", sans-serif;
   --nav-glass: rgb(255 255 255 / 70%);
@@ -71,6 +76,11 @@ body {
   --bg-button: #32363f;
   --bg-button-hover: #414853;
   --text-dark: #fffff5;
+  --color-ts: #3178c6;
+  --color-js: #f1e05a;
+  --color-css: #563d7c;
+  --color-html: #e34c26;
+  --color-other: #ededed;
   --shadow-dark: 3px 3px 16.5px -4.5px #fffff5;
   --text-white: #fffff5;
   --nav-glass: rgb(27 27 31 / 70%);
