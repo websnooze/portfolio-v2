@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-import Topbar from ".";
-import Footer from ".";
+import Topbar from "./topbar";
+import Footer from "./footer";
 
 const CoreLayout = () => {
   return (

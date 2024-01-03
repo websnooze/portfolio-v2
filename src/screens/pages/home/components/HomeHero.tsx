@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import { homeHeroData } from "./data/homeHeroData";
-import heroImg from "../../../assets/hero.webp";
+import heroImg from "../../../../assets/hero.webp";
 
 import styles from "./css/homeHero.module.css";
 

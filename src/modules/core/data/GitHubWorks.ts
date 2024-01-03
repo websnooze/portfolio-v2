@@ -14,15 +14,15 @@ const Colors = {
   other: "var(--color-other)",
 };
 
-import Booki from "../assets/projects/booki.webp";
-import Creel from "../assets/projects/creel.webp";
-import CustomerManager from "../assets/projects/customer-manager.webp";
-import Dater from "../assets/projects/dater.webp";
-import Ilfaitpasbeau from "../assets/projects/ilfaitpasbeau.webp";
-import Infiboost from "../assets/projects/infiboost.webp";
-import Kasa from "../assets/projects/kasa.webp";
-import Ohmyfood from "../assets/projects/ohmyfood.webp";
-import Thecookingfrench from "../assets/projects/thecookingfrench.webp";
+import Booki from "../../../assets/projects/booki.webp";
+import Creel from "../../../assets/projects/creel.webp";
+import CustomerManager from "../../../assets/projects/customer-manager.webp";
+import Dater from "../../../assets/projects/dater.webp";
+import Ilfaitpasbeau from "../../../assets/projects/ilfaitpasbeau.webp";
+import Infiboost from "../../../assets/projects/infiboost.webp";
+import Kasa from "../../../assets/projects/kasa.webp";
+import Ohmyfood from "../../../assets/projects/ohmyfood.webp";
+import Thecookingfrench from "../../../assets/projects/thecookingfrench.webp";
 
 export const GitHubWorksData = [
   {
