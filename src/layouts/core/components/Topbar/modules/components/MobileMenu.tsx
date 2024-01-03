@@ -1,13 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 
-import { HeaderLinks, HeaderSocials, LangSwitcher, ThemeSwitcher } from "..";
+import {
+  HeaderSocials,
+  LangSwitcher,
+  MobileHeaderLinks,
+  MobileThemeSwitcher,
+} from "..";
 
 import "./css/module.mobile-menu.css";
 
 const MobileMenu = () => {
-  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
@@ -64,15 +67,10 @@ const MobileMenu = () => {
             className="mobile-menu-container">
             <motion.div className="mobile-menu-block">
               <div className="mobile-menu-links">
-                <HeaderLinks />
+                <MobileHeaderLinks setIsOpen={setIsOpen} />
               </div>
               <LangSwitcher />
-              <div className="mobile-theme">
-                <span className="mobile-theme-label">
-                  {t("navbar.mobile.theme")}
-                </span>
-                <ThemeSwitcher />
-              </div>
+              <MobileThemeSwitcher />
               <HeaderSocials />
             </motion.div>
           </motion.div>
